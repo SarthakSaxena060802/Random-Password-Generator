@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RPG</title>
+    <link rel="stylesheet" href="style1.css">
+    <script src="https://kit.fontawesome.com/eab527e685.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="displayres">
+            <input type="text" id="passBox" disabled>
+            <span>
+                <i class="fa-regular fa-copy" id="copyIcon"></i>
+            </span>
+        </div>
+        <input type="range" min="1" max="30" value="8" id="sliderLen">
+        <div class="passlen">
+            <p>Password Length</p>
+            <div class="slidervalue" id="sliderValue"></div>
+        </div>
+        <div class="lowerCase">
+            <label for="lowerCase"> Include Lowercase Letters(a-z)</label>
+            <input type="checkbox" id="lowerCase" checked>     
+        </div>
+        <div class="upperCase">
+            <label for="upperCase"> Include Uppercase Letters(A-Z)</label>
+            <input type="checkbox" id="upperCase" checked>    
+        </div>
+        <div class="numbers">
+            <label for="numbers"> Include Numbers(0-9)</label>
+            <input type="checkbox" id="numbers" checked>    
+        </div>
+        <div class="symbols">
+            <label for="symbols"> Include Symbols(@-*)</label>
+            <input type="checkbox" id="symbols" checked>    
+        </div>
+        <div class="genbtn" id="genbtn">
+            <button>Generate Code</button>
+        </div>
+    </div>
+    <script src="script1.js"></script>
+</body>
+</html>
